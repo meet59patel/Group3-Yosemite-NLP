@@ -59,7 +59,7 @@ def synonym_similarity(ref_filtered , ans_filtered , ans_synonym):
         avg_length = float((len(ref_filtered) + len(ans_filtered))/2)
     return count/avg_length
 
-def asess_answer(ref,ans,marks):
+def assess_answer(ref,ans,marks):
     
     # initialize
     sbert_model = SentenceTransformer('bert-base-nli-mean-tokens')
@@ -109,5 +109,5 @@ def asess_answer(ref,ans,marks):
 #     ref = "Jesus is always around us"
 #     ans = "Jesus is my god"
 #     marks = 5
-#     asess_answer(ref,ans,marks)
+#     assess_answer(ref,ans,marks)
     
