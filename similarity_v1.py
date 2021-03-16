@@ -105,9 +105,9 @@ def assess_answer(ref,ans,marks):
     print(final_marks)
     return final_marks
 
-# if __name__ == "__main__":
-#     ref = "Jesus is always around us"
-#     ans = "Jesus is my god"
-#     marks = 5
-#     assess_answer(ref,ans,marks)
+if __name__ == "__main__":
+    ref = "Jesus is always around us"
+    ans = "Jesus is my god"
+    marks = 5
+    assess_answer(ref,ans,marks)
     
