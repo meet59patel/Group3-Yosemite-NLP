@@ -27,7 +27,18 @@
         "ideas",
         "maintenance"
       ]
-    }
+    },
+      {
+    "login": "rhlshah",
+      "name": "Rahil Shah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45811662?v=4",
+      "profile": "https://github.com/rhlshah",
+    "contributions": [
+      "code",
+      "ideas",
+      "maintenance"
+    ]
+  }
   ],
   "contributorsPerLine": 7,
   "projectName": "Group3-Yosemite-NLP",
