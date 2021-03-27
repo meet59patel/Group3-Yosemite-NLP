@@ -1,6 +1,6 @@
 # Yosemite NLP
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Run Server:
@@ -23,6 +23,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://meetpatel.github.io/"><img src="https://avatars.githubusercontent.com/u/45785817?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Meet Patel</b></sub></a><br /><a href="https://github.com/meet59patel/Group3-Yosemite-NLP/commits?author=meet59patel" title="Code">💻</a> <a href="#infra-meet59patel" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-meet59patel" title="Maintenance">🚧</a> <a href="#projectManagement-meet59patel" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://github.com/rhlshah"><img src="https://avatars.githubusercontent.com/u/45811662?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahil Shah</b></sub></a><br /><a href="https://github.com/meet59patel/Group3-Yosemite-NLP/commits?author=rhlshah" title="Code">💻</a> <a href="#ideas-rhlshah" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-rhlshah" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
