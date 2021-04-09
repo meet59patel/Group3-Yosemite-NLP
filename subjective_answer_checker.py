@@ -6,6 +6,7 @@ from nltk.corpus import wordnet as wn
 from nltk.tokenize import word_tokenize  
 import nltk
 import re
+import os
 from nltk.stem import WordNetLemmatizer
 from nltk.stem import PorterStemmer
 from scipy.spatial import distance
@@ -52,6 +53,7 @@ def similarity(x,y):
 def grammar_error(list1):
     tool = language_tool_python.LanguageTool('en-US')
     matches = tool.check(list1)
+    os.system("ps aux | grep 'languagetool-server.jar' | awk '{print $2}' | xargs kill -9")
     return len(matches)
 
 
