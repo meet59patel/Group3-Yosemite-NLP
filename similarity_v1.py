@@ -6,7 +6,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize  
 import nltk
 import re
-from sklearn.feature_extraction.text import TfidfVectorizer 
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics.pairwise import euclidean_distances
 from sklearn.feature_extraction.text import TfidfVectorizer 
@@ -15,7 +14,8 @@ from scipy.spatial import distance
 from nltk.corpus import stopwords
 import re
 import language_tool_python
-from itertools import chain, product    
+from itertools import chain, product 
+import os   
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -29,6 +29,7 @@ def grammar_error(list1):
     tool = language_tool_python.LanguageTool('en-US')
     matches = tool.check(list1)
     grammar_score = max(0,1 - len(matches)/len(list1))
+    os.system("ps aux | grep 'languagetool-server.jar' | awk '{print $2}' | xargs kill -9")
     return float(grammar_score)
 
 def bigram_similarity(ref,ans):
@@ -105,9 +106,9 @@ def assess_answer(ref,ans,marks):
     print(final_marks)
     return final_marks
 
-if __name__ == "__main__":
-    ref = "Jesus is always around us"
-    ans = "Jesus is my god"
-    marks = 5
-    assess_answer(ref,ans,marks)
+# if __name__ == "__main__":
+#     ref = "Jesus is always around us"
+#     ans = "Jesus is my god"
+#     marks = 5
+#     assess_answer(ref,ans,marks)
     
