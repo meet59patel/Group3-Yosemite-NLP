@@ -1,26 +1,25 @@
 from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
+# from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet as wn
 from nltk.tokenize import word_tokenize  
-import nltk
+# import nltk
 import re
-from nltk.stem import WordNetLemmatizer
+import os
+# from nltk.stem import WordNetLemmatizer
 from nltk.stem import PorterStemmer
 from scipy.spatial import distance
-
-
 import language_tool_python
-
 from collections import OrderedDict
 from copy import deepcopy
 from itertools import chain
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+# NLTK Download disabled for Dockerized App
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
 
 bert_model = SentenceTransformer('bert-base-nli-mean-tokens')
 nlp = spacy.load('en_core_web_sm')
@@ -52,6 +51,7 @@ def similarity(x,y):
 def grammar_error(list1):
     tool = language_tool_python.LanguageTool('en-US')
     matches = tool.check(list1)
+    os.system("ps aux | grep 'languagetool-server.jar' | awk '{print $2}' | xargs kill -9")
     return len(matches)
 
 
