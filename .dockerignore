@@ -1,0 +1,10 @@
+__pycache__/
+venv/
+.dockerignore
+Dockerfile
+.git
+.gitignore
+.prettierrc
+README.md
+.vscode
+.DS_Store
