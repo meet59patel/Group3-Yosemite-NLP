@@ -1,24 +1,21 @@
-import pandas as pd
-import numpy as np
+# import pandas as pd
+# import numpy as np
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords  
 from nltk.tokenize import word_tokenize  
-import nltk
+# import nltk
 import re
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.metrics.pairwise import euclidean_distances
-from sklearn.feature_extraction.text import TfidfVectorizer 
 from sentence_transformers import SentenceTransformer
 from scipy.spatial import distance
 from nltk.corpus import stopwords
 import re
 import language_tool_python
-from itertools import chain, product 
+from itertools import chain 
 import os   
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
 
 def jaccard_similarity(list1, list2):
     s1 = set(list1)
