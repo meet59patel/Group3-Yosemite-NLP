@@ -48,3 +48,11 @@ def test_small_correct(a,b):
 @pytest.mark.parametrize("a,b", long_correct)
 def test_large_correct(a,b):
     assert assess_answer(a,b,5) == 5
+
+# @pytest.mark.parametrize("a,b", small_wrong)
+# def test_small_correct(a,b):
+#     assert assess_answer(a,b,5) == 5
+
+# @pytest.mark.parametrize("a,b", long_wrong)
+# def test_large_correct(a,b):
+#     assert assess_answer(a,b,5) == 5
