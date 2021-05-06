@@ -54,7 +54,7 @@ def synonym_similarity(ref_filtered , ans_filtered , ans_synonym):
             if i in temp_set:
                 count=count+1
                 break
-        avg_length = float((len(ref_filtered) + len(ans_filtered))/2)
+    avg_length = float((len(ref_filtered) + len(ans_filtered))/2)
     return count/avg_length
 
 def assess_answer(ref,ans,marks):
