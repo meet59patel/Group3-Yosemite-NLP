@@ -15,7 +15,7 @@ joblib==1.0.1
 language-tool-python==2.5.3
 MarkupSafe==1.1.1
 murmurhash==1.0.5
-nltk==3.6.1
+nltk==3.6.5
 numpy==1.19.5
 packaging==20.9
 pandas==1.2.3
